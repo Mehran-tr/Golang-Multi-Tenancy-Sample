@@ -147,6 +147,23 @@ You should see a response like:
 - **Database connection issues**: Double-check your `.env` configuration and verify that the PostgreSQL service is running.
 - **Migrations failed**: Ensure that the `migrations` folder contains both `.up.sql` and `.down.sql` files for each migration.
 
+
+### Concurrency and Background Task Processing
+
+This multi-tenant Go app efficiently handles concurrent operations and background tasks using Go’s concurrency features.
+
+#### **Concurrent Data Fetching**
+When users are requested for a tenant, additional user-related data is fetched concurrently using goroutines. This improves performance by allowing multiple operations to execute in parallel, reducing the overall response time.
+
+#### **Background Task Processing**
+After the API response is sent, background jobs (like sending emails) are delegated to a worker pool. These tasks are processed asynchronously, without blocking the main request, ensuring scalability under heavy load.
+
+#### **Worker Pool**
+The application implements a worker pool to manage background tasks efficiently. Each worker handles tasks such as sending emails for users in the background, logged in the console as they complete.
+
+
+
+
 ## License
 
 This project is licensed under the MIT License.
