@@ -19,6 +19,7 @@ multi-tenant-go-app/
 ├── middleware/             # Tenant context middleware
 ├── models/                 # Database models and queries
 ├── routes/                 # API routing
+├── memory-management-go/   # Memory management in go       
 ├── migrations/             # Database migration files
 ├── .env                    # Environment variables (DB configuration)
 ├── go.mod                  # Go module file (dependencies)
@@ -162,7 +163,12 @@ After the API response is sent, background jobs (like sending emails) are delega
 The application implements a worker pool to manage background tasks efficiently. Each worker handles tasks such as sending emails for users in the background, logged in the console as they complete.
 
 
+### Memory Management and Pointers in Go
 
+```
+cd memory-management-go
+```
+This part demonstrates memory management techniques and pointer usage in Go. The program highlights the difference between passing variables by value vs. by pointer and showcases the use of `new` and `make` for memory allocation. 
 
 ## License
 
