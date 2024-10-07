@@ -21,7 +21,11 @@ multi-tenant-go-app/
 ├── routes/                 # API routing
 ├── memory-management-go/   # Memory management in go       
 ├── migrations/             # Database migration files
+├── reliable-software-go    # Testing Tools 
+├── modular-code-go         # Structuring Go Applications with Packages
+├── error-handling-go       # Error Handling
 ├── .env                    # Environment variables (DB configuration)
+├── .env.example            # Tetsing Environment variables
 ├── go.mod                  # Go module file (dependencies)
 ├── go.sum                  # Go dependency versions
 └── main.go                 # Application entry point
