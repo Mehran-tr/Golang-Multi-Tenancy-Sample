@@ -9,6 +9,23 @@ This project demonstrates how to profile and optimize Go applications for maximu
 - **Concurrency Optimization**: Use goroutines and synchronization primitives to handle CPU-bound tasks efficiently.
 
 
+## Project Structure
+
+ ```
+
+    go-performance-optimization/
+    ├── go.mod
+    ├── main.go
+    ├── profiler/
+    │   └── profiler.go
+    ├── services/
+    │   └── compute_service.go
+    ├── utils/
+    │   └── memory_utils.go
+    ├── README.md
+          
+```
+
 ## How to Run
 
 - **in cmd**:

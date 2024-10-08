@@ -26,3 +26,6 @@ Thumbs.db
 
 # Environment variables
 .env
+
+# update storage
+secure-file-upload/storage/encrypted_files/

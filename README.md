@@ -24,6 +24,8 @@ multi-tenant-go-app/
 ├── reliable-software-go    # Testing Tools 
 ├── modular-code-go         # Structuring Go Applications with Packages
 ├── error-handling-go       # Error Handling
+├── go-performance-optimization 
+├── secure-file-upload
 ├── .env                    # Environment variables (DB configuration)
 ├── .env.example            # Tetsing Environment variables
 ├── go.mod                  # Go module file (dependencies)
